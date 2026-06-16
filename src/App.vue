@@ -1,47 +1,28 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="min-h-screen text-utama font-sans">
+    <nav class="bg-white p-4 shadow-lg border-b border-slate-700">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="/logo.png" alt="WNM Logo" class="h-10 w-auto" />
+        </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+        <div class="flex gap-8">
+          <router-link
+            to="/"
+            class="hover:text-cyan-400 transition-colors font-semibold px-4 py-2 rounded-lg hover:bg-slate-100"
+            >Home</router-link
+          >
+          <router-link
+            to="/login"
+            class="hover:text-purple-400 transition-colors font-semibold px-4 py-2 rounded-lg hover:bg-slate-100"
+            >Login</router-link
+          >
+        </div>
+      </div>
+    </nav>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <main class="max-w-4xl mx-auto mt-10 p-4">
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>

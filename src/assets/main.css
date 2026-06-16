@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  /* Mendaftarkan warna baru dengan nama 'utama' */
+  --color-utama: #F15A25;
+  --color-wbg: #EDEDE2;
+}
