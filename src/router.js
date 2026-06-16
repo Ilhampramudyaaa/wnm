@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // 1. Panggil file halaman yang tadi kita buat
-import Home from "./views/home.vue";
+import Home from "./views/Home.vue";
 import Login from "./views/Login.vue";
 
 // 2. Buat aturan URL-nya

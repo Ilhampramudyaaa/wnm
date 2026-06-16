@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen text-utama font-sans">
-    <nav class="bg-white p-4 shadow-lg border-b border-slate-700">
+    <nav class="bg-white p-4 shadow-lg">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center">
           <img src="/logo.png" alt="WNM Logo" class="h-10 w-auto" />
@@ -21,7 +21,7 @@
       </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto mt-10 p-4">
+    <main class="w-full max-w-[95%] xl:max-w-[1400px] mx-auto mt-10 p-4">
       <router-view></router-view>
     </main>
   </div>
